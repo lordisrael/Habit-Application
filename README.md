@@ -6,10 +6,7 @@ This project helps users build and track habits, view streaks, and manage their 
 ---
 
 ## 📱 App Screenshots
-![Home Screen]
-<!-- screenshots of<img width="1080" height="2424" alt="Screenshot_1754268075" src="https://github.com/user-attachments/assets/9a9e2757-6e27-467a-b9ea-f381aa54bbed" />
- the app -->
-
+![Home Screen](./assets/images/home.png)
 ![Streaks Screen](./assets/images/habitstreaks.png)
 ![Add Habit Screen](./assets/images//addHabit.png)
 
