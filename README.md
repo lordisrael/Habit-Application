@@ -1,50 +1,78 @@
-# Welcome to your Expo app 👋
+# Habit Application 🚀
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Welcome to your Habit Tracker app built with [Expo](https://expo.dev) and React Native!  
+This project helps users build and track habits, view streaks, and manage their progress with a clean, mobile-first interface.
 
-## Get started
+---
 
-1. Install dependencies
+## 📱 App Screenshots
+
+<!-- screenshots of the app -->
+![Home Screen](./assets/images/home.png)
+![Streaks Screen](./assets/images/habitstreaks.png)
+![Add Habit Screen](./assets/images//addHabit.png)
+
+---
+
+## ✨ Features
+
+- **Authentication:** Sign up and sign in with email and password.
+- **Habit Management:** Add, view, and delete habits.
+- **Streak Tracking:** See your current and best streaks for each habit.
+- **Real-time Updates:** Habits and completions update in real time.
+- **File-based Routing:** Uses Expo Router for navigation.
+- **Responsive UI:** Built with React Native Paper for a modern look.
+- **Cross-platform:** Works on Android, iOS, and web (with Expo Go).
+
+---
+
+## 🚀 Getting Started
+
+1. **Install dependencies**
 
    ```bash
    npm install
    ```
 
-2. Start the app
+2. **Start the app**
 
    ```bash
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+   - Scan the QR code with [Expo Go](https://expo.dev/go) or run on an emulator/simulator.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 🗂️ Project Structure
 
-## Get a fresh project
+- **/app**: Main app source code (screens, navigation, logic)
+- **/lib**: Shared utilities and context (e.g., `auth-context.tsx`)
+- **/assets**: The images, and fonts used
 
-When you're ready, run:
+---
 
-```bash
-npm run reset-project
-```
+## 🛠️ Development Notes
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+- **Authentication logic** is handled in `/app/auth.tsx` using a custom `useAuth` context.
+- **RouteGuard** in `/app/_layout.tsx` protects routes and redirects based on authentication state.
+- **Streak calculation** is implemented in `/app/(tabs)/streaks.tsx` and ranks habits by best streak.
+- **CRLF line endings** are enforced via `.gitattributes` for Windows compatibility.
+- **Real-time updates** use subscriptions to listen for habit and completion changes.
 
-## Learn more
 
-To learn more about developing your project with Expo, look at the following resources:
+---
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## 📚 Learn More
 
-## Join the community
+- [Expo documentation](https://docs.expo.dev/)
+- [React Native Paper](https://callstack.github.io/react-native-paper/)
+- [Expo Router](https://docs.expo.dev/router/introduction/)
 
-Join our community of developers creating universal apps.
+---
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## 💬 Community
+
+- [Expo on GitHub](https://github.com/expo/expo)
+- [Expo Discord](https://chat.expo.dev)
+
